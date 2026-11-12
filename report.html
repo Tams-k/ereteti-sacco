@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report a drain - Katara Flow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+  <a href="index.html" class="brand">
+    <img
+      src="img\katara flow logo.jpeg"
+      alt="Katara Flow"
+      class="logo"
+    />
+    <span class="brand-name">Katara Flow</span>
+  </a> 
+  
+    <h1>Report a drain</h1>
+    <p>Tell us what is wrong and where. It takes about a minute.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="systems.html">Existing systems</a></li>
+      <li><a href="report.html" aria-current="page">Report a drain</a></li>
+      <li><a href="track.html">Track a report</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Submit a drainage report</h2>
+      <p>Fill in the form below. Be as exact as you can about the location,
+         because that is how NCWSC finds the drain. Fields marked
+         <strong>required</strong> must be filled in.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>What is wrong</legend>
+
+          <label for="problem">Type of problem (required)</label>
+          <select id="problem" name="problem" required>
+            <option value="">Choose a problem</option>
+            <option value="blocked">Drain blocked by waste or silt</option>
+            <option value="overflow">Drain overflowing</option>
+            <option value="damaged">Drain damaged or collapsed</option>
+            <option value="cover">Cover missing or broken</option>
+            <option value="other">Something else</option>
+          </select>
+
+          <label for="description">Describe it (required)</label>
+          <textarea id="description" name="description" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Where it is</legend>
+
+          <label for="area">Estate or area (required)</label>
+          <input type="text" id="area" name="area" required>
+
+          <label for="landmark">Street or nearest landmark (required)
+            <span class="hint">For example, a shop, school, junction or
+              bus stage next to the drain.</span>
+          </label>
+          <input type="text" id="landmark" name="landmark" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>How we reach you</legend>
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name">
+
+          <label for="phone">Phone number (required)
+            <span class="hint">We use it to tell you when the status of
+              your report changes.</span>
+          </label>
+          <input type="tel" id="phone" name="phone"
+                 pattern="07[0-9]{8}"
+                 title="Ten digits, starting 07"
+                 placeholder="07XXXXXXXX" required>
+        </fieldset>
+
+        <label for="consent" class="checkbox-label">
+          <input type="checkbox" id="consent" name="consent" required>
+          I agree that Katara Flow may use my phone number to send updates
+          about this report.
+        </label>
+
+        <button type="submit">Send report</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h2>At a glance</h2>
+    <ul>
+      <li>Every report moves through three stages:
+          <strong>Reported</strong>, <strong>In progress</strong>
+          and <strong>Resolved</strong>.</li>
+      <li>Katara Flow covers <strong>drainage problems in Nairobi</strong>
+          only. It does not cover roads, waste collection or electricity.</li>
+      <li>Built to be light, so it works on a slow connection.
+          <a href="report.html">Report a drain</a>.</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>Katara Flow, Strathmore Institute, Strathmore University, Nairobi, Kenya.</p>
+    <p>Diploma in Business Information Technology project, DBT Year 1, 2026.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track a report - Katara Flow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+  <a href="index.html" class="brand">
+    <img
+      src="img\katara flow logo.jpeg"
+      alt="Katara Flow"
+      class="logo"
+    />
+    <span class="brand-name">Katara Flow</span>
+  </a> 
+  
+    <h1>Track a report</h1>
+    <p>See where your report is, from Reported to Resolved.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="systems.html">Existing systems</a></li>
+      <li><a href="report.html">Report a drain</a></li>
+      <li><a href="track.html" aria-current="page">Track a report</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Find your report</h2>
+      <p>Enter the reference number you were given when you sent the
+         report.</p>
+
+      <form action="#" method="get">
+        <label for="reference">Reference number</label>
+        <input type="search" id="reference" name="reference"
+               placeholder="KF-0001" required>
+        <p><button type="submit">Check status</button></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>What the stages mean</h2>
+      <div class="table-scroll">
+        <table>
+          <caption>Sample entries, shown only to illustrate how the tracker looks</caption>
+          <thead>
+            <tr>
+              <th scope="col">Reference</th>
+              <th scope="col">Problem</th>
+              <th scope="col">Area</th>
+              <th scope="col">Status</th>
+              <th scope="col">What it means</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>KF-0001</td>
+              <td>Drain blocked by waste</td>
+              <td>Sample area A</td>
+              <td><span class="badge">Reported</span></td>
+              <td>Received. Waiting for NCWSC to review it.</td>
+            </tr>
+            <tr>
+              <td>KF-0002</td>
+              <td>Drain overflowing</td>
+              <td>Sample area B</td>
+              <td><span class="badge badge-progress">In progress</span></td>
+              <td>Reviewed by NCWSC. Work on the drain has started.</td>
+            </tr>
+            <tr>
+              <td>KF-0003</td>
+              <td>Cover missing or broken</td>
+              <td>Sample area C</td>
+              <td><span class="badge badge-resolved">Resolved</span></td>
+              <td>NCWSC has confirmed the problem is dealt with.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">You see only your own reports. Only NCWSC staff can
+         change a status. You will be notified each time it changes.</p>
+    </section>
+  </main>
+
+  <aside>
+    <h2>At a glance</h2>
+    <ul>
+      <li>Every report moves through three stages:
+          <strong>Reported</strong>, <strong>In progress</strong>
+          and <strong>Resolved</strong>.</li>
+      <li>Katara Flow covers <strong>drainage problems in Nairobi</strong>
+          only. It does not cover roads, waste collection or electricity.</li>
+      <li>Built to be light, so it works on a slow connection.
+          <a href="report.html">Report a drain</a>.</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>Tara, Strathmore Institute, Strathmore University, Nairobi, Kenya.</p>
+    <p>Diploma in Business Information Technology project, DBT Year 1, 2026.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it works - Katara Flow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="brand">
+    <img
+      src="img\katara flow logo.jpeg"
+      alt="Katara Flow"
+      class="logo"
+    />
+    <span class="brand-name">Katara Flow</span>
+  </a> 
+  
+    <h1>How it works</h1>
+    <p>Three modules, two roles, one straight line from report to resolution.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html" aria-current="page">How it works</a></li>
+      <li><a href="systems.html">Existing systems</a></li>
+      <li><a href="report.html">Report a drain</a></li>
+      <li><a href="track.html">Track a report</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>From report to resolution</h2>
+      <ol class="steps">
+        <li><strong>A resident reports.</strong> They choose what is wrong,
+            say where the drain is and add a short description.</li>
+        <li><strong>NCWSC reviews.</strong> The report appears in a list for
+            NCWSC staff, who move it to <em>In progress</em> when work
+            starts.</li>
+        <li><strong>NCWSC resolves.</strong> When the problem is dealt with,
+            staff mark it <em>Resolved</em> in the system.</li>
+        <li><strong>The resident is told.</strong> Every change of status
+            sends a notification back to the person who made the
+            report.</li>
+      </ol>
+      <p>The path is deliberately simple: Reported, then In progress, then
+         Resolved. The only thing that loops back is the notification to the
+         resident.</p>
+    </section>
+
+    <section>
+      <h2>The three modules</h2>
+      <ul class="cards">
+        <li>
+          <h3>Dashboard</h3>
+          <p>Where residents submit reports and see the status of their own
+             reports.</p>
+        </li>
+        <li>
+          <h3>Status review</h3>
+          <p>Where NCWSC staff view reports and move them from Reported to
+             In progress to Resolved.</p>
+        </li>
+        <li>
+          <h3>Notification engine</h3>
+          <p>Picks up each status change and alerts the resident
+             automatically.</p>
+        </li>
+      </ul>
+      <p>Each module can be built, tested and shown on its own, which keeps
+         the system easy to maintain and to grow.</p>
+    </section>
+
+    <section>
+      <h2>Two roles, two sets of permissions</h2>
+      <ul class="cards">
+        <li>
+          <h3>Resident</h3>
+          <p>Can create reports, see the status of their own reports and
+             receive notifications. Cannot change a status.</p>
+        </li>
+        <li>
+          <h3>NCWSC staff</h3>
+          <p>Can review reports and update their status. Confirmation that a
+             problem is resolved is made inside the system.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Built to be light</h2>
+      <p>Katara Flow runs in an ordinary web browser, so nobody has to
+         install anything. It is built with HTML, CSS and JavaScript on the
+         front end and a relational database behind it. The pages are kept
+         small, because many of the people who need the system have slow or
+         unreliable connections.</p>
+    </section>
+  </main>
+
+  <aside>
+    <h2>At a glance</h2>
+    <ul>
+      <li>Every report moves through three stages:
+          <strong>Reported</strong>, <strong>In progress</strong>
+          and <strong>Resolved</strong>.</li>
+      <li>Katara Flow covers <strong>drainage problems in Nairobi</strong>
+          only. It does not cover roads, waste collection or electricity.</li>
+      <li>Built to be light, so it works on a slow connection.
+          <a href="report.html">Report a drain</a>.</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>Katara Flow, Strathmore Institute, Strathmore University, Nairobi, Kenya.</p>
+    <p>Diploma in Business Information Technology project, DBT Year 1, 2026.</p>
+  </footer>
+
+</body>
+</html>
