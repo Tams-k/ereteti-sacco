@@ -58,9 +58,17 @@ const deliveryForm = document.querySelector('#delivery-form');
 const formMessage = document.querySelector('#form-message');
 
 function recordDelivery(event) {
-event.preventDefault();
-checkMember();
-checkLitres();
+    checkMember();
+    checkLitres();
+
+    if (member.classList.contains('invalid')) {
+        event.preventDefault();
+        member.focus();
+    } else if (litres.classList.contains('invalid')) {
+        event.preventDefault();
+        litres.focus();
+    }
+}
 
 if (member.classList.contains('invalid')) {
 member.focus();//fixes the problem of the form being submitted when the member number is invalid
@@ -107,15 +115,16 @@ search.addEventListener('input', filterRoutes);
 const totalCell = document.querySelector('#accepted-total');
 
 if (totalCell) {
-const rows = document.querySelectorAll('tbody tr');
-let total = 0;
+    const rows = document.querySelectorAll('tbody tr');
+    let total = 0;
 
-for (const row of rows) {
-const cells = row.querySelectorAll('td');
+    for (const row of rows) {
+        const cells = row.querySelectorAll('td');
 
-if (cells[4].textContent === 'Yes') {
-total = total + parseFloat(cells[3].textContent);
-}
-}
-totalCell.textContent = total.toFixed(2);
+        if (cells.length > 4 && cells[4].textContent.trim() === 'Yes') {
+            total = total + parseFloat(cells[3].textContent);
+        }
+    }
+
+    totalCell.textContent = total.toFixed(2);
 }
